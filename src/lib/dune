@@ -1,0 +1,5 @@
+(library
+ (name lib)
+ (wrapped false);whithout that line you will need to prefix all module with Lib.
+ (flags :standard -linkall)
+ (libraries graphics))

@@ -1,0 +1,26 @@
+{
+  "name": "josselin",
+  "version": "0.1.0",
+  "scripts": {
+    "bs:clean": "bsb -clean-world",
+    "clean": "esy b dune clean",
+    "butop": "esy b dune utop",
+    "bs:build": "bsb -make-world",
+    "bs:watch": "bsb -make-world -w"
+  },
+  "esy": {
+    "build": "dune build src/main.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "1.11.1",
+    "ocaml": "<4.8.0"
+  },
+  "keywords": [ "BuckleScript" ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@opam/ocamlfind": "1.8.1",
+    "@opam/utop": "2.4.1",
+    "bs-platform": "^5.0.7"
+  }
+}
